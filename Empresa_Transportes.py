@@ -316,10 +316,12 @@ class ventanaPrograma (Gtk.Window): #crea una ventana
 
         bAñadirEnvio = Gtk.Button("Añadir Datos")
         bAñadirEnvio.connect("clicked", self.bAñadirEnvio)
+        cajaInvisibleHor3.pack_start(bAñadirEnvio, False, False, 100)
         cajaInvisibleHor3.add(bAñadirEnvio)
 
         bLimpiarEnvio = Gtk.Button("Limpiar Campos")
         bLimpiarEnvio.connect("clicked", self.bLimpiarEnvio)
+        cajaInvisibleHor3.pack_end(bLimpiarEnvio, False, False, 0)
         cajaInvisibleHor3.add(bLimpiarEnvio)
 
 #SEGUNDA PARTE DE LA VENTANA:
@@ -375,10 +377,12 @@ class ventanaPrograma (Gtk.Window): #crea una ventana
 
         bAñadirRemite = Gtk.Button("Añadir Datos")
         bAñadirRemite.connect("clicked", self.bAñadirRemite)
+        cajaInvisibleHorizontal6.pack_start(bAñadirRemite, False, False, 100)
         cajaInvisibleHorizontal6.add(bAñadirRemite)
 
         bLimpiarRemitente = Gtk.Button("Limpiar Campos")
         bLimpiarRemitente.connect("clicked", self.bLimpiarRemitente)
+        cajaInvisibleHorizontal6.pack_end(bLimpiarRemitente, False, False, 0)
         cajaInvisibleHorizontal6.add(bLimpiarRemitente)
 
 # TERCERA PARTE DE LA VENTANA:
@@ -417,26 +421,31 @@ class ventanaPrograma (Gtk.Window): #crea una ventana
                 # añadir los checkbutton
         self.CheckButton1 = Gtk.CheckButton("Ninguno")
         self.CheckButton1.connect("clicked", self.comprobarCheck1)
+        cajaInvisibleVert5.pack_start(self.CheckButton1, False, False, 10)
         cajaInvisibleVert5.add(self.CheckButton1)
 
         self.CheckButton2 = Gtk.CheckButton("Si, a pagar ")
         self.CheckButton2.connect("clicked", self.comprobarCheck2)
+        cajaInvisibleVert5.pack_start(self.CheckButton2, False, False, 10)
         cajaInvisibleVert5.add(self.CheckButton2)
 
         self.txtpagarcontrarrembolso = Gtk.Entry()
         self.txtpagarcontrarrembolso.set_sensitive(False)
         cajaInvisibleHorizontal10.add(self.txtpagarcontrarrembolso)
 
-        botonVerFurgon= Gtk.Button("Abrir los Furgones")
-        botonVerFurgon.connect("clicked", self.cambioVentFurgon)
-        cajaInvisibleHorizontal11.add(botonVerFurgon)
-
         self.bPago = Gtk.Button("Añadir Datos")
         self.bPago.connect("clicked", self.bAñadirPago)
+        cajaInvisibleHorizontal11.pack_start(self.bPago, False, False, 0)
         cajaInvisibleHorizontal11.add(self.bPago)
+
+        botonVerFurgon= Gtk.Button("Abrir los Furgones")
+        botonVerFurgon.connect("clicked", self.cambioVentFurgon)
+        cajaInvisibleHorizontal11.pack_start(botonVerFurgon, False, False, 100)
+        cajaInvisibleHorizontal11.add(botonVerFurgon)
 
         botonsalir = Gtk.Button("SALIR")
         botonsalir.connect("clicked", self.bSalir)
+        cajaInvisibleHorizontal11.pack_end(botonsalir, False, False, 0)
         cajaInvisibleHorizontal11.add(botonsalir)
 
         cajaInvisibleVert1.add(cajaInvisibleHor1)#añade la caja horizontal 1 con la vertical 1
