@@ -3,8 +3,8 @@ import gi
 import sqlite3 as dbapi
 
 import random
-import Ventana_Furgon
-from Inicio_Programa import ventanaPrincipalPrograma
+from paquete.archivos import Ventana_Furgon
+from paquete.archivos.Inicio_Programa import ventanaPrincipalPrograma
 
 print (dbapi.apilevel)
 print (dbapi.threadsafety)
