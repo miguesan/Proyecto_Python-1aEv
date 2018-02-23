@@ -1,7 +1,7 @@
 **Proyecto Python - Miguel Sánchez Blanco Nº 6122:**
 
 
-*Para Instalarlo:*
+*Instalación:*
 
 - Una vez lo tengas descargado como *.zip*, abre el terminal
 - En el terminal ve hasta la carpeta que te creó al descomprimir el proyecto
