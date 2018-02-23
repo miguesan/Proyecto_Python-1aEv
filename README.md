@@ -6,7 +6,7 @@
 - Una vez lo tengas descargado como *.zip*, abre el terminal
 - En el terminal ve hasta la carpeta que te creó al descomprimir el proyecto
 - Ejecuta " *sudo python3 setup.py install* "
-- Una vez instalado, escribe en el terminal " *lanzador* " (con la L en minuscula) y ya debería ejecutarse
+- Una vez instalado, escribe en el terminal " *Lanzador* " (con la L en mayuscula) y ya debería ejecutarse
 
 
 -----------------------------------------------------------------------------------------------------------------
