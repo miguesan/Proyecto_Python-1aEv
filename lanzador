@@ -1,0 +1,6 @@
+#!usr/bin/python3
+from paquete import Inicio_Programa
+from gi.repository import Gtk
+
+Inicio_Programa.ventanaPrincipalPrograma()
+Gtk.main()

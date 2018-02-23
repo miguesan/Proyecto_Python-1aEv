@@ -3,8 +3,7 @@ import gi
 import sqlite3 as dbapi
 
 import random
-from paquete.archivos import Ventana_Furgon
-from paquete.archivos.Inicio_Programa import ventanaPrincipalPrograma
+from paquete import Ventana_Furgon
 
 print (dbapi.apilevel)
 print (dbapi.threadsafety)
@@ -479,5 +478,5 @@ class ventanaPrograma (Gtk.Window): #crea una ventana
         self.show_all()
                                 #para que se muestre la ventana
 if __name__ == "__main__":
-    ventana = ventanaPrincipalPrograma()
+    ventana = ventanaPrograma()
     Gtk.main()

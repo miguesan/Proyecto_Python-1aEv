@@ -1,6 +1,6 @@
 import gi
 
-from paquete.archivos import Empresa_Transportes
+from paquete import Empresa_Transportes
 
 import sqlite3 as dbapi
 

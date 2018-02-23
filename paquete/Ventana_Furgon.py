@@ -2,7 +2,7 @@ import gi
 
 import sqlite3 as dbapi
 
-from paquete.archivos import Empresa_Transportes
+from paquete import Empresa_Transportes
 
 print (dbapi.apilevel)
 print (dbapi.threadsafety)
