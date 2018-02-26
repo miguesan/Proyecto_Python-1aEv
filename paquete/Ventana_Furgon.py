@@ -2,7 +2,7 @@ import gi
 
 import sqlite3 as dbapi
 
-from paquete import Empresa_Transportes
+import paquete.Empresa_Transportes
 
 print (dbapi.apilevel)
 print (dbapi.threadsafety)
@@ -15,7 +15,7 @@ from gi.repository import Gtk
 class ventanaFurgon (Gtk.Window): #crea una ventana
 
     def cambioVolver (self, boton):
-        Empresa_Transportes.ventanaPrograma()
+        paquete.Empresa_Transportes.ventanaPrograma()
         self.destroy()
 
     def botonCargar(self, boton):

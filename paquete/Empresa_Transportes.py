@@ -3,7 +3,7 @@ import gi
 import sqlite3 as dbapi
 
 import random
-from paquete import Ventana_Furgon
+import paquete.Ventana_Furgon
 
 print (dbapi.apilevel)
 print (dbapi.threadsafety)
@@ -17,7 +17,7 @@ from gi.repository import Gtk
 class ventanaPrograma (Gtk.Window): #crea una ventana
 
     def cambioVentFurgon(self, boton):
-        Ventana_Furgon.ventanaFurgon()
+        paquete.Ventana_Furgon.ventanaFurgon()
         self.destroy()
 
     def bSalir(self, boton): #sale del programa y cierra la base de datos

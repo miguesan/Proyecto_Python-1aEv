@@ -1,6 +1,6 @@
 import gi
 
-from paquete import Empresa_Transportes
+import paquete.Empresa_Transportes
 
 import sqlite3 as dbapi
 
@@ -28,7 +28,7 @@ class ventanaPrincipalPrograma (Gtk.Window): #crea una ventana
             print("Error en la Base de Datos")
 
     def cambioVent(self, boton):
-        Empresa_Transportes.ventanaPrograma()
+        paquete.Empresa_Transportes.ventanaPrograma()
         self.destroy()
 
     def bSalir(self, boton): #sale del programa y cierra la base de datos
